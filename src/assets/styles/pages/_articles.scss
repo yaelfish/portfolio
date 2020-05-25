@@ -1,0 +1,24 @@
+.articles-container {
+    margin-top: 10vh;
+    padding: 5vh 4vw;
+    margin-bottom: 10vh;
+    article {
+        table {
+            color: $light-grey;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-family: karla;
+        }
+    }
+}
+
+.learn-sql {
+    ul {
+        max-width: 60ch;
+        margin: 1.3rem;
+    }
+    li {
+        list-style-type: disc;
+    }
+}

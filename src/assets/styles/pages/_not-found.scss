@@ -1,0 +1,18 @@
+.not-found-container {
+    text-align: center;
+    font-family: karla;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    margin: 7vh auto;
+
+    img.ghost {
+        width: 40vw;
+        margin: auto;
+        display: block;
+    }
+
+    p {
+        margin: 2rem auto;
+        font-size: 1.7rem;
+    }
+}

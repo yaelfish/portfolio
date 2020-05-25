@@ -1,0 +1,16 @@
+section.projects-container {
+    h2 {
+        text-align: center;
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-family: Rubik;
+        font-family: karla;
+        margin: 4rem auto;
+    }
+}
+
+  .card-footer {
+        @include for-narrow-layout {
+           flex-direction: row;
+        }
+    }

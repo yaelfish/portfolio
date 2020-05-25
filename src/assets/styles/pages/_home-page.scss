@@ -1,0 +1,61 @@
+.App {
+    font-family: karla, sans-serif;
+    text-align: center;
+    background-color: #cdf2e7;
+    background: rgb(163, 232, 213);
+    background: linear-gradient(90deg, $turquoise 0%, $pink 100%);
+}
+
+.App-header {
+    background-color: #282c34;
+    background: linear-gradient(90deg, $turquoise 0%, $pink 100%);
+    // background: rgb(238, 174, 202);
+    //   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: $black;
+    background-image: url("../../images/dark.jpg");
+
+    @include for-normal-layout {
+        flex-direction: column;
+    }
+}
+
+aside.welcome-text {
+    max-width: 43ch;
+    text-align: left;
+    margin-left: 30px;
+    box-shadow: 0px 0px 5px 0px #a8a8a8;
+
+    background-color: $dark-blue;
+    color: $light-grey;
+    padding: 3vh 0vw 3vh 2vw;
+
+    @include for-normal-layout {
+        max-width: 30ch;
+        margin-top: -6vh;
+    }
+    @include for-narrow-layout {
+        max-width: 83%;
+        margin: 0;
+        margin-top: -3vh;
+    }
+
+    h1 {
+        line-height: 3.7rem;
+        @include for-narrow-layout {
+            line-height: 2.3rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    .nikita {
+        background-color: #2f4f4f;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+img.girl {
+    width: 30%;
+}

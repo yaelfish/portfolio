@@ -1,0 +1,45 @@
+// flex helpers
+
+.flex {
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.justify-around {
+        justify-content: space-around;
+    }
+    &.justify-end {
+        justify-content: flex-end;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.align-end {
+        align-items: end;
+    }
+}
+
+// filter colors
+
+.grayscale {
+    filter: grayscale(20%);
+}
+.contrast {
+    filter: contrast(80%);
+}
+
+// Media helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}

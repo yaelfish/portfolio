@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: karla, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    background-color: $light-grey;
+    // background: linear-gradient(90deg, $turquoise 0%, $pink 100%);
+    background-image: url("../../images/dark.jpg");
+    background-color: $dark-blue;
+    color: $light-blue;
+    font-family: karla, rubik;
+}
+
+main {
+    min-height: 100vh;
+}
+
+ul {
+    list-style: circle;
+    text-decoration: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    // font-size: rem(40px);
+    margin-bottom: rem(20px);
+}
+
+p {
+    margin: 0 0 rem(12px);
+    max-width: 60ch;
+}
+
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+.hidden {
+    visibility: hidden;
+}

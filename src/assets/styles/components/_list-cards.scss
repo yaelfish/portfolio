@@ -1,0 +1,13 @@
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 22px;
+  padding-bottom: 80px;
+}
+
+.card {
+  background-color: $dark-blue;
+  background-clip: border-box;
+  border: 4px solid $dark-blue;
+}
+

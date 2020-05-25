@@ -1,0 +1,15 @@
+footer {
+    text-align: center;
+    padding: 3vh 1vw;
+
+    @include for-narrow-layout {
+        flex-direction: column-reverse;
+    }
+    p {
+        margin: 0;
+    }
+
+    img.code {
+        width: 24px;
+    }
+}

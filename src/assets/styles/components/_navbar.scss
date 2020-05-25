@@ -1,0 +1,39 @@
+.nav-logo {
+    width: 42px;
+    margin-right: 9px;
+    @include for-narrow-layout {
+        width: 30px;
+    }
+}
+
+.navbar-brand {
+    @include for-narrow-layout {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar {
+    background: $purple;
+    font-family: karla;
+    box-shadow: -2px -16px 11px 11px $purple;
+
+    figure {
+        display: flex;
+        align-self: center;
+        margin: 0 1vw;
+        cursor: pointer;
+        img.switch-mode {
+            @include for-narrow-layout {
+                width: 70%;
+            }
+        }
+    }
+}
