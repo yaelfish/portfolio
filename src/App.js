@@ -36,9 +36,9 @@ function App() {
         <Navbar />
         <main>
           <Switch>
-            <Route exact component={HomePage} path="/" />
-            <Route exact component={Projects} path="/project" />
-            <Route exact component={About} path="/about" />
+            <Route exact component={HomePage} path="/portfolio" />
+            <Route exact component={Projects} path="/portfolio/project" />
+            <Route exact component={About} path="/portfolio/about" />
             <Route component={NotFoundPage} path="/" />
           </Switch>
         </main>

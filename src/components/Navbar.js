@@ -31,7 +31,7 @@ export default function Navbar() {
                         exact
                         activeClassName="active-link"
                         className="navbar-brand"
-                        to="/"
+                        to="/portfolio"
                     >
                         <img src={girl} alt="logo" className="nav-logo" />
                         Yael Fisher
@@ -55,7 +55,7 @@ export default function Navbar() {
                                     exact
                                     activeClassName="active-link active"
                                     className="nav-link"
-                                    to="/"
+                                    to="/portfolio"
                                 >
                                     Hello <span className="sr-only">(current)</span>
                                 </NavLink>
@@ -65,7 +65,7 @@ export default function Navbar() {
                                     exact
                                     activeClassName="active-link active"
                                     className="nav-link"
-                                    to="/project"
+                                    to="/portfolio/project"
                                 >
                                     Projects
                             </NavLink>
@@ -75,7 +75,7 @@ export default function Navbar() {
                                     exact
                                     activeClassName="active-link active"
                                     className="nav-link"
-                                    to="/about"
+                                    to="/portfolio/about"
                                 >
                                     About
                                 </NavLink>

@@ -19,7 +19,7 @@ export const NotFoundPage = () => (
   <Section>
     <section className="container not-found-container flex column">
       <h1>THIS PAGE IS A GHOST <br></br>
-        <Link to="/" className="marked">404</Link> NOT FOUND</h1>
+        <Link to="/portfolio" className="marked">404</Link> NOT FOUND</h1>
       <img src="https://i.imgur.com/QIxIKBH.png" alt="ghost" className="ghost" />
       <p>You just hit a route that doesn&#39;t exist</p>
     </section>

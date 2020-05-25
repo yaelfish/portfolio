@@ -120,7 +120,7 @@ export const Projects = props => {
                         </details>
                     </div>
                     <footer className="card-footer flex justify-end">
-                        <Link to="/">See in action</Link>
+                        <Link to="/portfolio">See in action</Link>
                     </footer>
                 </section>
                

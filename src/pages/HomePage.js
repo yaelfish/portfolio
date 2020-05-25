@@ -13,7 +13,7 @@ export const HomePage = () => {
                         I'm a Tel Aviv based <Link to="/about" className="nikita">Full-Stack developer</Link> & JavaScript enthusiast, currently looking for my next challenge
                         <span role="img" aria-label="eyes"> 👀</span>
                     </h1>
-                    <Link to="/project">
+                    <Link to="/portfolio/project">
                         See What I've been working on
                     </Link>
                 </aside>
