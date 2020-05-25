@@ -15,9 +15,10 @@
             width: 200px;
             border-radius: 2px;
             border-radius: 113px;
-            //    @include for-narrow-layout {
-            //         width: 150px;
-            //     }
+               @include for-narrow-layout {
+                    width: 150px;
+                    height: 150px;
+                }
         }
 
         img.nikita {
