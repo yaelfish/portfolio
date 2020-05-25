@@ -46,7 +46,6 @@ export const About = () => {
                             <div>
                                 <p>
                                     Hi!<span role="img" aria-label="hi">👋</span><br></br>  
-                                    I'm relatively new to the world of software proggrammimg, but thoroughly filling in all the gaps. 
                                 </p>
                                 <p>
                                     My Formal education is in the fields of Psychology and Media & Communication studies. I discovered programming by coincidence, and ever since I'm hooked.
@@ -59,8 +58,8 @@ export const About = () => {
                                 </p>
                                 <p>
                                     I'm an enthusiastic coder, a <mark>creative</mark> and curious person who strives to always keep learning and growing both as a coder and as a human being.
-                                    I'm a highly motivated self learner who is a hard working and a positive person. I like to tackle problems and appreciate <mark>debugging</mark>. 
-                                    Among some of my interests and/or hobbies you can find things like art, patterns, collage, psychology, travelling, music, Twin Peaks, documentaries, classy films and coding. 
+                                    I'm a highly motivated self learner who is a hard working and a positive person. <mark>I like to tackle problems and appreciate debugging</mark>. 
+                                    Among some of my interests and/or hobbies you can find things like art, patterns, collage, psychology, travelling, music, Twin Peaks, documentaries, classy films, Trashy films and coding. 
                                 </p>
                             </div>
                             <hr></hr>    
