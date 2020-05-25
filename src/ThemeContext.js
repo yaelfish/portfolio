@@ -1,23 +1,22 @@
-import React from "react";
+import React, {useEffect, useState, useContext, createContext} from "react";
 import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
 import theme from "./theme.js";
 
 const defaultContextData = {
-    dark: false,
-    toggle: () => { }
+    dark: false
 };
 
-const ThemeContext = React.createContext(defaultContextData);
-const useTheme = () => React.useContext(ThemeContext);
+const ThemeContext = createContext(defaultContextData);
+const useTheme = () => useContext(ThemeContext);
 
 const useEffectDarkMode = () => {
-    const [themeState, setThemeState] = React.useState({
+    const [themeState, setThemeState] = useState({
         dark: false,
         hasThemeMounted: false
     });
-    React.useEffect(() => {
-        const lsDark = localStorage.getItem("dark") === "true";
-        setThemeState({ ...themeState, dark: lsDark, hasThemeMounted: true });
+    useEffect(() => {
+        const isDark = localStorage.getItem("dark") === "true";
+        setThemeState({ ...themeState, dark: isDark, hasThemeMounted: true });
     }, []);
 
     return [themeState, setThemeState];
