@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Yael",
+  "name": "Yael Fisher Portfolio",
+  "description": "Yael Fisher's portfolio showcasing full-stack and front-end development projects.",
   "icons": [
     {
       "src": "favicon.ico",
