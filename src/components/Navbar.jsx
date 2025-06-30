@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useTheme } from '../ThemeContext';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
@@ -21,16 +21,25 @@ const Nav = styled("nav")`
 `;
 
 export default function Navbar() {
+    const collapseRef = useRef(null);
     const themeState = useTheme();
+
+    const toggleCollapse = () => {
+        const collapse = collapseRef.current;
+        if (collapse.classList.contains('show')) {
+            collapse.classList.remove('show');
+        } else {
+            collapse.classList.add('show');
+        }
+    };
+
 
     return (
         <Nav>
             <nav className={themeState.dark ? "navbar navbar-expand-lg navbar-dark flex justify-between" : "navbar navbar-expand-lg navbar-light flex justify-between"}>
                 <div className="flex">
                     <NavLink
-                        exact
-                        activeClassName="active-link"
-                        className="navbar-brand"
+                        className={({ isActive }) => isActive ? 'navbar-brand active' : 'navbar-brand'}
                         to="/portfolio"
                     >
                         <img src={girl} alt="logo" className="nav-logo" />
@@ -39,32 +48,18 @@ export default function Navbar() {
                     <button
                         className="navbar-toggler"
                         type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
+                        onClick={toggleCollapse}
                         aria-controls="navbarSupportedContent"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
                         <span className="navbar-toggler-icon"></span>
                     </button>
-
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" ref={collapseRef} id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
                                 <NavLink
-                                    exact
-                                    activeClassName="active-link active"
-                                    className="nav-link"
-                                    to="/portfolio"
-                                >
-                                    Hello <span className="sr-only">(current)</span>
-                                </NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink
-                                    exact
-                                    activeClassName="active-link active"
-                                    className="nav-link"
+                                    className={({ isActive }) => isActive ? 'nav-link active-link active' : 'nav-link'}
                                     to="/portfolio/project"
                                 >
                                     Projects
@@ -72,9 +67,7 @@ export default function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <NavLink
-                                    exact
-                                    activeClassName="active-link active"
-                                    className="nav-link"
+                                    className={({ isActive }) => isActive ? 'nav-link active-link active' : 'nav-link'}
                                     to="/portfolio/about"
                                 >
                                     About

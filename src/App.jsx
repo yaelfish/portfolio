@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import styled from "@emotion/styled";
 
 import Navbar from './components/Navbar';
@@ -9,8 +8,6 @@ import { HomePage } from './pages/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Projects } from './pages/Projects';
 import { About } from './pages/About';
-
-const history = createBrowserHistory();
 
 const Wrapper = styled("div")`
   background: ${props => props.theme.background};
@@ -32,18 +29,18 @@ function App() {
 
   return (
     <Wrapper>
-      <Router history={history}>
+      <BrowserRouter basename={'/'}>
         <Navbar />
         <main>
-          <Switch>
-            <Route exact component={HomePage} path="/portfolio" />
-            <Route exact component={Projects} path="/portfolio/project" />
-            <Route exact component={About} path="/portfolio/about" />
-            <Route component={NotFoundPage} path="/" />
-          </Switch>
+          <Routes>
+            <Route element={<HomePage/>} path={'/portfolio'} />
+            <Route element={<Projects/>} path={'/portfolio/project'} />
+            <Route element={<About/>} path={'/portfolio/about'} />
+            <Route element={<NotFoundPage/>} path={'/not-found'} />
+          </Routes>
         </main>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </Wrapper>
   );
 }

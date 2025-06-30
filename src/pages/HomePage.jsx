@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import girl from '../assets/images/girl.png';
 
 export const HomePage = () => {
@@ -10,12 +10,11 @@ export const HomePage = () => {
                 <aside className="welcome-text">
                     <h1>
                         Hi, I'm Yael.<br></br>
-                        I'm a Tel Aviv based <Link to="/about" className="nikita">Full-Stack developer</Link> & JavaScript enthusiast
-                        , happily coding at 
-                        <a href="https://www.gettacar.com/" target="_blank" rel="noopener noreferrer"> gettacar</a>
+                        I'm a Tel Aviv based <Link to="/about" className="nikita">full-stack developer</Link> passionate about crafting seamless user experiences with JavaScript.  
+                        {/* I turn complex problems into elegant products. */}
                     </h1>
                     <Link to="/portfolio/project">
-                        See What else I've been working on
+                        → View my projects
                     </Link>
                 </aside>
             </header>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useContext, createContext} from "react";
-import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
-import theme from "./theme.js";
+import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
+import theme from "./theme.jsx";
 
 const defaultContextData = {
     dark: false
