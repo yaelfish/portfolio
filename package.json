@@ -1,7 +1,7 @@
 {
   "homepage": " http://yaelfish.github.io/portfolio",
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "@emotion/core": "^11.0.0",
