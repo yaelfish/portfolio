@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react-swc';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/portfolio/',   // base path for GitHub Pages
   server: { open: true },          // optional
-  build:  { outDir: 'build' },      // keep CRA’s output folder name
   css: {
     preprocessorOptions: {
       scss: {
